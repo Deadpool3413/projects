@@ -1,18 +1,11 @@
- **Project Title:**
+# 🚀 Tic-Tac-Toe
 
-Tic-Tac-Toe
-
----
-
-**Project Summary:**
+## Project Summary:
 
  A game of Tic-Tac-Toe built on Angular js
  wanted to build a very simple and fun game for everyone to enjoy 
 
-
----
-
-**Technology Used**
+## Technology Used
 
 - JavaScript
 - HTML

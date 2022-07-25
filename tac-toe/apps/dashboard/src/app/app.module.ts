@@ -14,7 +14,6 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
 @NgModule({
   declarations: [
     AppComponent,
-    NxWelcomeComponent,
     SquareComponent,
     BoardComponent,
   ],
@@ -22,7 +21,7 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
     HttpClientModule, 
     AppRoutingModule, 
     BrowserAnimationsModule, 
-    NbThemeModule.forRoot({ name: 'default' }), 
+    NbThemeModule.forRoot({ name: 'cosmic' }), 
     NbLayoutModule,
     NbButtonModule,  
     NbEvaIconsModule],

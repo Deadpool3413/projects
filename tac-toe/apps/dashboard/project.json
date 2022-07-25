@@ -66,6 +66,7 @@
       },
       "defaultConfiguration": "development",
       "options": {
+        "browserTarget": "bjjcastle:build",
         "proxyConfig": "apps/dashboard/proxy.conf.json"
       }
     },

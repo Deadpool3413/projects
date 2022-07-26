@@ -5,7 +5,7 @@
     "defaultBase": "master"
   },
   "cli": {
-    "packageManager": "npm"
+    "analytics": "45c50c08-4bb7-44f4-83cf-a2a9b9574be6"
   },
   "implicitDependencies": {
     "package.json": {

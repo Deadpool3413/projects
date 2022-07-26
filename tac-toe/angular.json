@@ -6,8 +6,5 @@
     "api-interfaces": "libs/api-interfaces",
     "dashboard": "apps/dashboard",
     "dashboard-e2e": "apps/dashboard-e2e"
-  },
-  "cli": {
-    "analytics": "45c50c08-4bb7-44f4-83cf-a2a9b9574be6"
   }
 }

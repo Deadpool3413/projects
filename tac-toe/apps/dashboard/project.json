@@ -5,7 +5,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/dashboard",
         "index": "apps/dashboard/src/index.html",
@@ -15,11 +17,16 @@
         "inlineStyleLanguage": "scss",
         "assets": [
           "apps/dashboard/src/favicon.ico",
-          "apps/dashboard/src/assets"
+          "apps/dashboard/src/assets",
+          "apps/dashboard/src/manifest.webmanifest"
         ],
-        "styles": ["apps/dashboard/src/styles.scss", 
-        "node_modules/@nebular/theme/styles/prebuilt/default.css"],
-        "scripts": []
+        "styles": [
+          "apps/dashboard/src/styles.scss",
+          "node_modules/@nebular/theme/styles/prebuilt/default.css"
+        ],
+        "scripts": [],
+        "serviceWorker": true,
+        "ngswConfigPath": "apps/dashboard/ngsw-config.json"
       },
       "configurations": {
         "production": {
@@ -87,10 +94,22 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/dashboard"],
+      "outputs": [
+        "coverage/apps/dashboard"
+      ],
       "options": {
         "jestConfig": "apps/dashboard/jest.config.ts",
         "passWithNoTests": true
+      }
+    },
+    "deploy": {
+      "executor": "@angular/fire:deploy",
+      "options": {
+        "prerender": false,
+        "ssr": false,
+        "browserTarget": "dashboard:build:production",
+        "firebaseProject": "tic-tac-toe-9eae5",
+        "firebaseHostingSite": "tic-tac-toe-9eae5"
       }
     }
   },
